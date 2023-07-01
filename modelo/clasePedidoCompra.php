@@ -24,7 +24,7 @@ class PedidoCompra
             echo 'Pedido cerrado: ' . 'FALSO <br>';
         }
         //CONDICION IF PARA PEDIDO CERRADO
-        
+        echo '<hr>';
         echo '<--- proveedor ---> <br>';
         echo 'ID: ' . $this->proveedor->Id . '<br>';
         echo 'Descripcion: ' . $this->proveedor->Description . '<br> <hr>';
@@ -39,7 +39,7 @@ class PedidoCompra
             } else {
                 echo 'Fue entregado: ' . 'FALSO <br>';
             }
-            
+
             echo 'Codigo Producto: ' . $lc->Producto->Codigo . '<br>';
             echo 'Descripcion Producto: ' . $lc->Producto->Description . '<br>';
             echo 'Precio Producto: ' . $lc->Producto->PrecioVenta . '<br> <hr>';
